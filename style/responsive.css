@@ -9,7 +9,6 @@
 @media screen and (max-width: 1024px) {
     header {
         width: 100%;
-        background: linear-gradient(90deg, #246AD3, #003D98);
         height: 114px;
         position: fixed;
         transition: 0.5s;
@@ -406,6 +405,21 @@ main {
     }
     .title-post::after {
         top: 35px;
+    }
+    .logo-footer {
+        width: 40%;
+    }
+    .logo-footer img {
+        height: 80px;
+    }
+    .link-facebook {
+        font-size: 13px;
+    }
+    .container {
+        padding: 0 10px;
+    }
+    .copyright {
+        font-size: 10px;
     }
 }
 @media screen and (max-width: 393px) {

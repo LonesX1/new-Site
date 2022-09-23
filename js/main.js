@@ -5,16 +5,17 @@ const header =  document.querySelector('header');
 
 // methods
 const scrollDown = () => {
-	if (window.innerHeight >= 801) {
+	if (window.innerHeight >= 800) {
 		if (pageYOffset >= 140) {
-				header.classList.add('scrollDown');
+			menu.classList.remove('active')
+			header.classList.add('scrollDown');
 		} else {
 				header.classList.remove('scrollDown');
 		}
 	}
 
 	if (window.innerHeight <= 800) {
-		if (pageYOffset >= 100) {
+		if (pageYOffset >= 10) {
 			header.classList.add('scrollDown');
 		} else {
 			header.classList.remove('scrollDown');
