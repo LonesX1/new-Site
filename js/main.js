@@ -5,7 +5,6 @@ const header =  document.querySelector('header');
 const blogPost = document.querySelector('.all-blog-post');
 // methods
 const scrollDown = () => {
-	console.log(pageYOffset)
 	if (window.innerHeight >= 801) {
 		if (pageYOffset >= 140) {
 			menu.classList.remove('active')
