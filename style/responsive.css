@@ -7,6 +7,9 @@
     }
 }
 @media screen and (max-width: 1024px) {
+    .post-img {
+        height: 230px;
+    }
     header {
         width: 100%;
         height: 114px;
@@ -236,6 +239,9 @@ main {
 }
 }
 @media screen and (max-width: 768px) {
+    .post-img {
+        height: 170px;
+    }
     .right-side-post {
         width: 60%;
     }
@@ -260,6 +266,10 @@ main {
     }
 }
 @media screen and (max-width: 425px) {
+    .post-img {
+        height: 170px;
+        width: 300px;
+    }
     header {
         width: 100%;
         background: linear-gradient(90deg, #246AD3, #003D98);
@@ -438,6 +448,10 @@ main {
     }
 } 
 @media screen and (max-width: 360px) {
+    .post-img {
+        height: 170px;
+        width: 250px;
+    }
     .post {
         height: 120px;
     }
