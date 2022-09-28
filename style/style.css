@@ -219,6 +219,7 @@ main {
 }
 .post img {
     height: 95%;
+    max-width: 50%;
     border-radius: 10px;
 }
 .right-side-post {
@@ -239,6 +240,7 @@ main {
     font-weight: 500;
     position: relative;
     color: #525252;
+    text-align: center;
 }
 .title-post::after {
     content: '';
@@ -269,7 +271,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     width: 25%;
     height: 100%;
