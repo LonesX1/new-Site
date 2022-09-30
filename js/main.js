@@ -6,7 +6,7 @@ const blogPost = document.querySelector('.all-blog-post');
 // methods
 const scrollDown = () => {
 	if (window.innerHeight >= 801) {
-		if (pageYOffset >= 140) {
+		if (pageYOffset >= 120) {
 			menu.classList.remove('active')
 			header.classList.add('scrollDown');
 		} else {
