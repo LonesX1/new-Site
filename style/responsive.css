@@ -7,9 +7,14 @@
     }
 }
 @media screen and (max-width: 1024px) {
-    /* .post-img {
-        height: 230px;
-    } */
+    .partner-info-about {
+        font-size: 14px;
+    }
+    .partner-logo {
+        margin-left: 5px;
+        margin-right: 5px;
+        
+    }
     header {
         width: 100%;
         height: 114px;
@@ -163,11 +168,6 @@ main {
     -moz-box-shadow: 0px 4px 17px 2px rgba(34, 60, 80, 0.1);
     box-shadow: 0px 4px 17px 2px rgba(34, 60, 80, 0.1);
 }
-.post img {
-    height: 95%;
-    max-width: 38%;
-    /* border-radius: 10px; */
-}
 .right-side-post {
     height: 95%;
     width: 69%;
@@ -240,6 +240,11 @@ main {
 } */
 }
 @media screen and (max-width: 768px) {
+    .partner-info-about {
+        font-size: 13px;
+        width: 76%;
+    }
+
     /* .post-img {
         height: 170px;
     } */
@@ -265,10 +270,8 @@ main {
     .info-post {
         font-size: 15px;
     }
-    .post img {
-        height: 95%;
-        max-width: 40%;
-        margin-left: -5px;
+    .img-post {
+        width: 45%;
     }
     .post-img-galerie {
         width: 100%;
@@ -284,6 +287,16 @@ main {
     }
 }
 @media screen and (max-width: 425px) {
+    .partner-info-about {
+        font-size: 12px;
+        width: 68%;
+    }
+    .partner-logo {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100px;
+        height: 100px;
+    }
     .post-img-galerie {
         width: 100%;
         height: 100%;
@@ -341,6 +354,9 @@ main {
         width: 100px;
         margin-right: 5px;
         justify-content: end;
+    }
+    .title-of-main {
+        padding: 0;
     }
     .title-menu {
         font-size: 26px;
@@ -428,9 +444,10 @@ main {
     }
     .post {
         height: 170px;
+        padding: 0 5px 0 5px;
     }
-    .post img {
-        max-width: 45%;
+    .img-post {
+        width: 50%;
     }
     .right-side-post {
         width: 55%;
@@ -488,6 +505,9 @@ main {
         height: 60%;
         width: 40%;
     }
+    .img-post {
+        width: 45%;
+    }
 } 
 @media screen and (max-width: 360px) {
     .post-img {
@@ -520,5 +540,19 @@ main {
     }
     .name-inst {
         font-size: 10px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .button-open-about::before {
+        left: 18px;
+    }
+    .button-open-about::after {
+        left: 18px;
+    }
+    .partner.inactive .partner-import-info .button-open-about::after {
+        left: 24px;
+    }
+    .partner.inactive .partner-import-info .button-open-about::before {
+        left: 11px;
     }
 }

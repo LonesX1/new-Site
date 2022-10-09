@@ -2,7 +2,8 @@ const dropdown = document.querySelector('.burger-line');
 const menu = document.querySelector('.menu');
 const site = document.querySelector('html');
 const header =  document.querySelector('header');
-const blogPost = document.querySelector('.all-blog-post');
+// const blogPost = document.querySelector('.all-blog-post');
+
 // methods
 const scrollDown = () => {
 	if (window.innerHeight >= 801) {
@@ -30,6 +31,10 @@ const scrollDown = () => {
 // 	}
 // }
 
+const openMenu = (menuOpen) => {
+	menuOpen.classList.toggle('active');
+}
+
 // end methods
 
 dropdown.onclick = () => {
@@ -40,3 +45,10 @@ dropdown.onclick = () => {
 // mainOverflowSetting(blogPost)
 window.addEventListener('scroll', scrollDown);
 
+const partner = document.querySelector('.partner');
+const open = document.querySelector('.button-open-about');
+
+// open.onclick = () => {
+// 	partner.classList.toggle('active')
+// }
+// open.addEventListener("click", openMenu(partner));
