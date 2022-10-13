@@ -282,6 +282,9 @@ main {
     }
 }
 @media screen and (max-width: 425px) {
+    .img-post-galerie {
+        height: 120px;
+    }
     .partner-info-about {
         font-size: 12px;
         width: 68%;
@@ -352,6 +355,7 @@ main {
     }
     .title-of-main {
         padding: 0;
+        font-size: 27px;
     }
     .title-menu {
         font-size: 26px;
@@ -484,6 +488,48 @@ main {
     }
 }
 @media screen and (max-width: 393px) {
+    .button-next-page {
+        min-width: 200px;
+        height: 35px;
+        background: #D9D9D9;
+        align-self: center;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 5px 0 0 0;
+    }
+    .button-navigation-at-page {
+        border-radius: 50px;
+        min-width: 25px;
+        margin: 0 5px;
+        height: 25px;
+        font-size: 17px;
+        background: #474747;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        cursor: pointer;
+        font-weight: 400;
+        transition: 0.15s linear;
+    }
+    .button-navigation-at-page:nth-child(8) {
+        display: none;
+    }
+    .button-navigation-at-page:nth-child(9) {
+        background: none;
+        color: #474747;
+        font-size: 30px;
+        font-weight: 800;
+        cursor: default;
+    }
+    .button-navigation-at-page:hover:nth-child(9) {
+        background: none;
+    }
+    .button-navigation-at-page:hover {
+        background: #838383;
+    }
     .right-side-post {
         width: 52%;
     }
@@ -533,6 +579,12 @@ main {
     }
 }
 @media screen and (max-width: 320px) {
+    .button-navigation-at-page:nth-child(7) {
+        display: none;
+    }
+    .button-navigation-at-page:nth-child(6) {
+        display: none;
+    }
     .button-open-about::before {
         left: 18px;
     }
