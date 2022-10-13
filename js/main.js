@@ -7,7 +7,7 @@ const header =  document.querySelector('header');
 // methods
 const scrollDown = () => {
 	if (window.innerHeight >= 801) {
-		if (pageYOffset >= 120) {
+		if (pageYOffset >= 100) {
 			menu.classList.remove('active')
 			header.classList.add('scrollDown');
 		} else {
@@ -16,7 +16,7 @@ const scrollDown = () => {
 	}
 
 	if (window.innerHeight <= 800) {
-		if (pageYOffset >= 15) {
+		if (pageYOffset >= 10) {
 			header.classList.add('scrollDown');
 		} else {
 			header.classList.remove('scrollDown');
