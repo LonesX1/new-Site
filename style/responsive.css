@@ -75,11 +75,6 @@
         padding: 2px 4px;
         transition: 0.3s;
     }
-    .button-option:hover a{
-        color: rgb(0, 0, 0);
-        border-radius: 5px;
-        border: 1px solid rgb(0, 0, 0);
-    }
     .menu.active .option-menu {
         visibility: 1;
         opacity: 1;
@@ -375,11 +370,6 @@ main {
         font-weight: 400;
         padding: 2px 4px;
         transition: 0.3s;
-    }
-    .button-option:hover a{
-        color: rgb(0, 0, 0);
-        border-radius: 5px;
-        border: 1px solid rgb(0, 0, 0);
     }
     .menu.active .option-menu {
         visibility: 1;

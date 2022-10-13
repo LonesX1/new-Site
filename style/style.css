@@ -96,12 +96,12 @@ nav {
     color: rgb(255, 255, 255);
     font-weight: 400;
     padding: 2px 4px;
-    transition: 0.3s;
+    transition: 0.3s linear;
 }
 .button-option:hover a{
     color: #d8d8d8;
-    /* border-radius: 5px;
-    border: 1px solid rgb(0, 0, 0); */
+    font-size: 23px;
+    
 }
 .menu.active .option-menu {
     visibility: visible;
