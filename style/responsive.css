@@ -7,6 +7,17 @@
     }
 }
 @media screen and (max-width: 1024px) {
+    .post-activiti {
+        height: 250px;
+    }
+    .date-of-posting-actv {
+        font-size: 16px;
+        width: 21%;
+    }
+    .info-post-actv {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
     .partner-info-about {
         font-size: 14px;
     }
@@ -193,7 +204,6 @@ main {
     height: 60%;
     display: flex;
     align-items: center;
-    text-align: center;
     font-size: 20px;
     font-weight: 300;
 }
@@ -235,6 +245,18 @@ main {
 } */
 }
 @media screen and (max-width: 768px) {
+    .post-activiti {
+        height: 250px;
+    }
+    .date-of-posting-actv {
+        font-size: 14px;
+        width: 21%;
+    }
+    .info-post-actv {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
     .partner-info-about {
         font-size: 13px;
         width: 76%;
@@ -282,6 +304,24 @@ main {
     }
 }
 @media screen and (max-width: 425px) {
+    .top-side-post-activiti .title-post {
+        font-size: 15px;
+    }
+    .top-side-post-activiti .title-post::after {
+        top: 45px;
+    }
+    .post-activiti {
+        height: 250px;
+    }
+    .date-of-posting-actv {
+        font-size: 12px;
+        width: 34%;
+    }
+    .info-post-actv {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
     .img-post-galerie {
         height: 120px;
     }
@@ -488,6 +528,24 @@ main {
     }
 }
 @media screen and (max-width: 393px) {
+    .top-side-post-activiti .title-post {
+        font-size: 15px;
+    }
+    .top-side-post-activiti .title-post::after {
+        top: 50px;
+    }
+    .post-activiti {
+        height: 280px;
+    }
+    .date-of-posting-actv {
+        font-size: 12px;
+        width: 40%;
+    }
+    .info-post-actv {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
     .button-next-page {
         min-width: 200px;
         height: 35px;
@@ -546,6 +604,24 @@ main {
     }
 } 
 @media screen and (max-width: 360px) {
+    .top-side-post-activiti .title-post {
+        font-size: 14px;
+    }
+    .top-side-post-activiti .title-post::after {
+        top: 50px;
+    }
+    .post-activiti {
+        height: 330px;
+    }
+    .date-of-posting-actv {
+        font-size: 12px;
+        width: 45%;
+    }
+    .info-post-actv {
+        margin-top: 0;
+        margin-bottom: 45px;
+        font-size: 10px;
+    }
     .post-img {
         /* height: 170px; */
         width: 250px;
