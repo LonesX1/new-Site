@@ -302,8 +302,24 @@ main {
         margin: 5px;
         justify-self: center;
     }
+    .section-info-contact {
+        width: 210px;
+    }
 }
 @media screen and (max-width: 425px) {
+    .title-contact {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .section-contact-main {
+        font-size: 14px;
+    }
+    .section-info-contact {
+        width: 170px;
+    }
+    .main-contact {
+        grid-template-columns: 50% 50%;
+    }
     .top-side-post-activiti .title-post {
         font-size: 15px;
     }
@@ -528,6 +544,16 @@ main {
     }
 }
 @media screen and (max-width: 393px) {
+    .title-contact {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .section-contact-main {
+        font-size: 14px;
+    }
+    .section-info-contact {
+        width: 150px;
+    }
     .top-side-post-activiti .title-post {
         font-size: 15px;
     }
@@ -604,6 +630,17 @@ main {
     }
 } 
 @media screen and (max-width: 360px) {
+    .title-contact {
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .section-contact-main {
+        font-size: 13px;
+    }
+    .section-info-contact {
+        width: 130px;
+        margin-bottom: 0;
+    }
     .top-side-post-activiti .title-post {
         font-size: 14px;
     }
