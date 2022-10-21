@@ -16,6 +16,16 @@ a {
 body {
     background: #f3f3f3;
 }
+body::-webkit-scrollbar {
+    width: 7px;               /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+    background: rgb(202, 202, 202);        /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(32, 189, 163);    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+}
 .unselectable {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -23,9 +33,9 @@ body {
     -moz-user-select: none;      /* Firefox */
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;           /* Versiune non-prefixată, în prezent nu este acceptată de niciun browser */
-  }
-
+}
 header {
+    z-index: 100;
     width: 100%;
     background: linear-gradient(90deg, #301172, #201a85);
     height: 114px;
@@ -33,7 +43,6 @@ header {
     transition: 0.5s;
     display: flex;
     justify-content: center;
-    z-index: 1000;
 }
 header.scrollDown {
     background: linear-gradient(90deg, #390ca39d, #3e37c99d);
@@ -473,6 +482,7 @@ footer {
     align-items: center;
     transition: 0.2s linear;
     overflow: hidden;
+    cursor: pointer;
 }
 .img-post-galerie img {
     object-fit: cover;
@@ -716,4 +726,103 @@ footer {
 }
 .map-contact iframe {
     width: 100%;
+}
+
+.post-img-from-gallery {
+    max-width: 900px;
+    max-height: 600px;
+    /* background: black; */
+    position: absolute;
+    top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    transition: 0.1s;
+    display: none;
+}
+.post-img-from-gallery.full {
+    display: flex;
+    position: fixed;
+    visibility: visible;
+    opacity: 1;
+}
+/* .post-img-from-gallery.full::before {
+    content: '';
+    width: 1900px;
+    height: 1600px;
+    background: rgba(0, 0, 0, 0.637);
+    position: absolute;
+} */
+.post-img-from-gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.delete-full {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    right: 5px;
+    top: -40px;
+    transition: 0.1s linear;
+    cursor: pointer;
+
+}
+.delete-full::after {
+    content: '';
+    width: 900px;
+    right: -5px;
+    z-index: -1;
+    top: -5px;
+    height: 45px;
+    background:#1c005e;
+    position: absolute;
+}
+.delete-full:hover {
+    background: #d4d4d4;
+}
+.delete-full:hover .l-line{
+    background: #303030;
+}
+.delete-full:hover .r-line{
+    background: #303030;
+}
+.l-line {
+    transform: rotate(45deg);
+}
+.r-line {
+    transform: rotate(-45deg);
+}
+.r-line, .l-line {
+    background: rgb(0, 0, 0);
+    width: 3px;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.background-full {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background: #00000060;
+    z-index: 1;
+}
+.background-full.background-visible {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+html.activeGallery{
+    overflow:hidden;
 }

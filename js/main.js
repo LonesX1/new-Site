@@ -12,17 +12,17 @@ const scrollDown = () => {
 			header.classList.add('scrollDown');
 		} else {
 				header.classList.remove('scrollDown');
-		}
-	}
+		};
+	};
 
 	if (window.innerHeight <= 800) {
 		if (pageYOffset >= 10) {
 			header.classList.add('scrollDown');
 		} else {
 			header.classList.remove('scrollDown');
-		}
-	}
-}
+		};
+	};
+};
 // const mainOverflowSetting = (post) => {
 // 	if (post.children.length >= 5) {
 // 		post.style.height = 100 + "%";
@@ -33,7 +33,7 @@ const scrollDown = () => {
 
 const openMenu = (menuOpen) => {
 	menuOpen.classList.toggle('active');
-}
+};
 
 // end methods
 
@@ -52,3 +52,25 @@ const open = document.querySelector('.button-open-about');
 // 	partner.classList.toggle('active')
 // }
 // open.addEventListener("click", openMenu(partner));
+
+const imgGalerie = document.querySelectorAll('.img-post-galerie');
+const exitGalerie = document.querySelectorAll('.delete-full');
+const blurBackground = document.querySelector('.background-full');
+
+const fullScreenImg = function() {
+	this.nextElementSibling.classList.toggle('full');
+	blurBackground.classList.add('background-visible');
+	site.classList.add('activeGallery');
+	header.classList.remove('scrollDown');
+};
+
+for (const item of imgGalerie) {
+	item.onclick = fullScreenImg;
+};
+for (const item of exitGalerie) {
+	item.onclick = () => {
+		blurBackground.classList.remove('background-visible');
+		item.parentElement.classList.remove('full')
+		site.classList.remove('activeGallery');
+	};
+};
